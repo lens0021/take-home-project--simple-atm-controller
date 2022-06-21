@@ -6,11 +6,19 @@ This is a library that provides functions/classes for future bare-bone workflows
 
 ## Usage
 
+The API that is required for this library is not defined. You should do the below steps:
+
+1. Implement a subclass of ApiInterface
+2. Implement methods of it.
+3. Pass an instance of the subclass as the second parameter of `Card()` function.
+
+### Example
+
 ```py
 from simple_atm_controller import Card, Account
 from your_custom_api import YourCustomApi
 
-card = new Card('0000000000000000000', YourCustomApi()) # Card number
+card = new Card('0000000000000000000', YourCustomApi())
 try:
   card.authenticate(0000) # Pin number
   accounts = card.list_accounts()
@@ -29,9 +37,6 @@ if account[1]:
   status = account[1].withdraw(10)
 ```
 
-## Before using this
+## Limitation
 
-The API that is required for this library is not strictly defined. You should do the below steps:
-
-- implement a subclass of ApiInterface
-- Implement methods of it.
+This repository is just for a take-home project and the package is not really published. Because this is a pyproject, it is expected that you could install this package using a dependency manager if published as designed.
