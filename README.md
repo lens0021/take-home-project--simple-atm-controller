@@ -1,5 +1,7 @@
 # Simple atm controller
 
+[![.github/workflows/ci.yaml](https://github.com/lens0021/take-home-project--simple-atm-controller/actions/workflows/ci.yaml/badge.svg)](https://github.com/lens0021/take-home-project--simple-atm-controller/actions/workflows/ci.yaml) [![codecov](https://codecov.io/gh/lens0021/take-home-project--simple-atm-controller/branch/main/graph/badge.svg?token=GcRdoex9SN)](https://codecov.io/gh/lens0021/take-home-project--simple-atm-controller)
+
 This is a library that provides functions/classes for future bare-bone workflows.
 
 ## Usage
