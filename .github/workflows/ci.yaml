@@ -19,9 +19,9 @@ jobs:
       - run: poetry install
 
       - name: Lint
-        run: poetry flake8
+        run: poetry run flake8
 
       - name: Unittest
-        run: poetry pytest --cov-report=xml --cov=./
+        run: poetry run pytest --cov-report=xml --cov=./
 
       - uses: codecov/codecov-action@v3
